@@ -1,0 +1,123 @@
+<?php
+
+/*
+Library for managing tables built with the jQuery "DataTables" plugin:
+http://www.datatables.net
+*/
+
+class DataTable
+{
+
+	public $default_size = 25;
+	public $id;
+	public $model_method;
+	public $enable_ajax;
+	public $local_search;
+	public $enable_excel;
+	public $default_count;
+	public $method_var_array = array();
+	public $refnum;
+	public $cols;
+
+	public function addMethodVar($var)
+	{
+		$this->method_var_array[] = $var;
+	}
+	
+	public function init()
+	{
+		$epoch = date("U");
+
+		$model_method = $this->model_method;
+		
+		$method_var_array = $this->method_var_array;
+		
+		$method_var_string = '';
+		$method_var_counter = 0;
+		foreach ( $method_var_array as $method_var ) {
+			if ( $method_var_counter == 0 ) {
+				$method_var_string .= "'$method_var'";
+			} else {
+				$method_var_string .= ", '$method_var'";	
+			}
+			$method_var_counter++;
+		}
+
+		if ( sizeof($method_var_array) > 0 ) {
+			$this->method_vars_serial = serialize($method_var_string);
+		}
+		
+		$CI =& get_instance();
+		
+		$route =& load_class('Router');
+		$url_class = $route->class;
+		
+		if ( $route->method == '' ) {
+			$url_method = 'index';
+		} else {
+			$url_method = $route->method;
+		}
+
+		$controller1 = BASEPATH . "../application/controllers/" . $url_class . ".php";
+		$controller2 = BASEPATH . "../application/modules/" . $url_class . "/controllers/" . $url_class . ".php";
+		
+		if ( file_exists($controller2) ) {
+			$controller_ftime = filemtime($controller2);
+		} else if ( file_exists($controller1) ) {
+			$controller_ftime = filemtime($controller1);
+		}
+
+		$hash_name = $url_class . "-" . $url_method . "-" . $controller_ftime . "-" . $this->id . "-" . date("U") . "-" . $CI->session->userdata('language');
+		
+		foreach ( glob("../cache/datatables/" . $url_class . "-" . $url_method . "*") as $filename) {
+		    $file_array = explode("-", $filename);
+			$cache_time = $file_array[2];
+		}
+		
+		if ( $controller_ftime <= @$cache_time ) {
+			
+			// Cache is up-to-date
+			
+			$cache = array();
+			$cache["method_vars"] = $method_var_array;
+			$cache["local_search"] = $this->local_search;
+			$cache["cols"] = $this->cols;
+			$cache_serial = serialize($cache);
+
+			$this->refnum = $hash_name;
+
+			$hash_file = BASEPATH . "../cache/datatables/" . $hash_name;
+			
+			if ( !file_exists($hash_file) ) {
+				$fh = fopen($hash_file, 'w');
+				fwrite($fh, $cache_serial);
+				fclose($fh);
+			}
+						
+		} else {
+			
+			// Cache is possibly out-of-date
+			
+			$cache = array();
+			$cache["method_vars"] = $method_var_array;
+			$cache["cols"] = $this->cols;
+			$cache_serial = serialize($cache);
+			
+			foreach ( glob("../cache/datatables/" . $url_class . "-" . $url_method . "*") as $filename) {
+				unlink($filename);
+			}
+
+			$this->refnum = $hash_name;
+			$hash_file = BASEPATH . "../cache/datatables/" . $hash_name;
+			$fh = fopen($hash_file, 'w');
+			fwrite($fh, $cache_serial);
+			fclose($fh);
+			
+		}
+
+		return $CI->load->view('datatable/datatable', $this, true);
+	}
+	
+}
+
+?>

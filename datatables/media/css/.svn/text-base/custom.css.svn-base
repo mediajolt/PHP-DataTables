@@ -1,0 +1,417 @@
+.sortableTable .dataTables_wrapper {
+	position: relative;
+	min-height: 302px;
+	_height: 302px;
+	clear: both;
+}
+
+.sortableTable .dataTables_processing {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.sortableTable .dataTables_length {
+	width: 40%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.sortableTable .dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+.sortableTable .dataTables_info {
+	width: 60%;
+	float: left;
+	margin-top: 5px;
+}
+
+.sortableTable .dataTables_paginate {
+	width: 44px;
+	* width: 50px;
+	float: right;
+	text-align: right;
+	margin-top: 5px;
+}
+
+/* Pagination nested */
+.sortableTable .paginate_disabled_previous, .sortableTable .paginate_enabled_previous, .sortableTable .paginate_disabled_next, .sortableTable .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+}
+
+.sortableTable .paginate_disabled_previous {
+	background-image: url('/includes/datatables/media/images/images/previous.gif');
+	background-repeat: no-repeat;
+}
+
+.sortableTable .paginate_enabled_previous {
+	background-image: url('/includes/datatables/media/images/images/previous.gif');
+	background-repeat: no-repeat;
+}
+
+.sortableTable .paginate_disabled_next {
+	background-image: url('/includes/datatables/media/images/images/next.gif');
+	background-repeat: no-repeat;
+}
+
+.sortableTable .paginate_enabled_next {
+	background-image: url('/includes/datatables/media/images/images/next.gif');
+	background-repeat: no-repeat;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+.sortableTable table.display {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+.sortableTable table.display thead th {
+	padding: 3px 18px 3px 10px;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	cursor: pointer;
+	* cursor: hand;
+}
+
+.sortableTable table.display tfoot th {
+	padding: 3px 10px;
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+
+.sortableTable table.display tr.heading2 td {
+	border-bottom: 1px solid #aaa;
+}
+
+.sortableTable table.display td {
+	padding: 3px 10px;
+}
+
+.sortableTable table.display td.center {
+	text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sortableTable .sorting_asc {
+	background: url('/includes/dataTables/media/images/2.gif');
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+}
+
+.sortableTable .sorting_desc {
+	background: url('/includes/dataTables/media/images/3.gif');
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+}
+
+.sortableTable .sorting {
+	background: url('/includes/dataTables/media/images/1.gif');
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+}
+
+.sortableTable .sorting_asc_disabled {
+}
+
+.sortableTable .sorting_desc_disabled {
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+.sortableTable table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+.sortableTable table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+.sortableTable table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+.sortableTable table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+.sortableTable table.display tr.odd.gradeC {
+	background-color: #ddddff;
+}
+
+.sortableTable table.display tr.even.gradeC {
+	background-color: #eeeeff;
+}
+
+.sortableTable table.display tr.odd.gradeX {
+	background-color: #ffdddd;
+}
+
+.sortableTable table.display tr.even.gradeX {
+	background-color: #ffeeee;
+}
+
+.sortableTable table.display tr.odd.gradeU {
+	background-color: #ddd;
+}
+
+.sortableTable table.display tr.even.gradeU {
+	background-color: #eee;
+}
+
+
+.sortableTable tr.odd {
+	background-color: #ecf2f6;
+}
+
+.sortableTable tr.even {
+	background-color: #ffffff;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.sortableTable .top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.sortableTable .top .dataTables_info {
+	float: none;
+}
+
+.sortableTable .clear {
+	clear: both;
+}
+
+.sortableTable .dataTables_empty {
+	text-align: center;
+}
+
+.sortableTable tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+.sortableTable tfoot input.search_init {
+	color: #999;
+}
+
+.sortableTable td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+.sortableTable td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+
+.sortableTable .example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.sortableTable .paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.sortableTable .paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.sortableTable .paging_full_numbers span.paginate_button {
+	background-color: #ddd;
+}
+
+.sortableTable .paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.sortableTable .paging_full_numbers span.paginate_active {
+	background-color: #99B3FF;
+}
+
+.sortableTable table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+.sortableTable table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+.sortableTable tr.odd td.sorting_1 {
+	background-color: #dce6ee;
+}
+
+.sortableTable tr.odd td.sorting_2 {
+	background-color: #ffffff;
+}
+
+.sortableTable tr.odd td.sorting_3 {
+	background-color: #ffffff;
+}
+
+.sortableTable tr.even td.sorting_1 {
+	background-color: #ecf2f6;
+}
+
+.sortableTable tr.even td.sorting_2 {
+	background-color: #ecf2f6;
+}
+
+.sortableTable tr.even td.sorting_3 {
+	background-color: #ecf2f6;
+}
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+.sortableTable tr.odd.gradeA td.sorting_1 {
+	background-color: #c4ffc4;
+}
+
+.sortableTable tr.odd.gradeA td.sorting_2 {
+	background-color: #d1ffd1;
+}
+
+.sortableTable tr.odd.gradeA td.sorting_3 {
+	background-color: #d1ffd1;
+}
+
+.sortableTable tr.even.gradeA td.sorting_1 {
+	background-color: #d5ffd5;
+}
+
+.sortableTable tr.even.gradeA td.sorting_2 {
+	background-color: #e2ffe2;
+}
+
+.sortableTable tr.even.gradeA td.sorting_3 {
+	background-color: #e2ffe2;
+}
+
+.sortableTable tr.odd.gradeC td.sorting_1 {
+	background-color: #c4c4ff;
+}
+
+.sortableTable tr.odd.gradeC td.sorting_2 {
+	background-color: #d1d1ff;
+}
+
+.sortableTable tr.odd.gradeC td.sorting_3 {
+	background-color: #d1d1ff;
+}
+
+.sortableTable tr.even.gradeC td.sorting_1 {
+	background-color: #d5d5ff;
+}
+
+.sortableTable tr.even.gradeC td.sorting_2 {
+	background-color: #e2e2ff;
+}
+
+.sortableTable tr.even.gradeC td.sorting_3 {
+	background-color: #e2e2ff;
+}
+
+.sortableTable tr.odd.gradeX td.sorting_1 {
+	background-color: #ffc4c4;
+}
+
+.sortableTable tr.odd.gradeX td.sorting_2 {
+	background-color: #ffd1d1;
+}
+
+.sortableTable tr.odd.gradeX td.sorting_3 {
+	background-color: #ffd1d1;
+}
+
+.sortableTable tr.even.gradeX td.sorting_1 {
+	background-color: #ffd5d5;
+}
+
+.sortableTable tr.even.gradeX td.sorting_2 {
+	background-color: #ffe2e2;
+}
+
+.sortableTable tr.even.gradeX td.sorting_3 {
+	background-color: #ffe2e2;
+}
+
+.sortableTable .sortableTable tr.odd.gradeU td.sorting_1 {
+	background-color: #c4c4c4;
+}
+
+.sortableTable tr.odd.gradeU td.sorting_2 {
+	background-color: #d1d1d1;
+}
+
+.sortableTable tr.odd.gradeU td.sorting_3 {
+	background-color: #d1d1d1;
+}
+
+.sortableTable tr.even.gradeU td.sorting_1 {
+	background-color: #d5d5d5;
+}
+
+.sortableTable tr.even.gradeU td.sorting_2 {
+	background-color: #e2e2e2;
+}
+
+.sortableTable tr.even.gradeU td.sorting_3 {
+	background-color: #e2e2e2;
+}
+
+/*
+ * Row highlighting example
+ */
+.sortableTable .ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+	background-color: #ECFFB3;
+}
+
+.sortableTable .ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+	background-color: #E6FF99;
+}

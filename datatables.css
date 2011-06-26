@@ -1,0 +1,525 @@
+/* DataTable */
+
+.sortableTableNew {
+	width: 100%;
+}
+
+.sortableTableNew .tableToolbar {
+	background-color: #959799;
+	padding: 10px;
+}
+
+.sortableTabNew .dataTables_length {
+	position: relative;
+}
+
+.sortableTableNew .ajaxIMG {
+	position: absolute;
+	top: 1px;
+	left: 140px;
+}
+
+.sortableTableNew .comparison {
+	clear: both;
+}
+
+.sortableTableNew .dataTables_wrapper {
+	position: relative;
+	min-height: 150px;
+	_height: 150px;
+	clear: both;
+}
+
+.sortableTableNew .dataTables_processing {
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.sortableTableNew .dataTables_length {
+	width: 40%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.sortableTableNew .dataTables_info {
+	width: 40%;
+	float: left;
+	margin: 0px 0px 15px 0px;
+}
+
+.sortableTableNew .dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+	margin: 0px 0px 15px 0px;
+}
+
+.sortableTableNew .dataTables_paginate {
+	width: 44px;
+	* width: 50px;
+	float: right;
+	text-align: right;
+	margin-top: 0px;
+}
+
+/* Pagination nested */
+.sortableTableNew .paginate_disabled_previous, .sortableTableNew .paginate_enabled_previous, .sortableTableNew .paginate_disabled_next, .sortableTableNew .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+	cursor: pointer;
+}
+
+.sortableTableNew .paginate_disabled_previous {
+	background-image: url('datatables/media/images/back_disabled.jpg');
+	background-repeat: no-repeat;
+}
+
+.sortableTableNew .paginate_enabled_previous {
+	background-image: url('datatables/media/images/back_enabled.jpg');
+	background-repeat: no-repeat;
+}
+
+.sortableTableNew .paginate_disabled_next {
+	background-image: url('datatables/media/images/forward_disabled.jpg');
+	background-repeat: no-repeat;
+}
+
+.sortableTableNew .paginate_enabled_next {
+	background-image: url('datatables/media/images/forward_enabled.jpg');
+	background-repeat: no-repeat;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sortableTableNew .sorting_asc {
+	background-color: #bababa;
+	background-repeat: repeat-x;
+}
+
+.sortableTableNew .sorting_desc {
+	background-color: #bababa;
+	background-repeat: repeat-x;
+}
+
+.sortableTableNew .sorting {
+	background-color: #bababa;
+	background-repeat: repeat-x;
+}
+
+.sortableTableNew .sorting_asc_disabled {
+}
+
+.sortableTableNew .sorting_desc_disabled {
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+.sortableTableNew table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+.sortableTableNew table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+.sortableTableNew table.display tr.odd.gradeC {
+	background-color: #ddddff;
+}
+
+.sortableTableNew table.display tr.even.gradeC {
+	background-color: #eeeeff;
+}
+
+.sortableTableNew table.display tr.odd.gradeX {
+	background-color: #ffdddd;
+}
+
+.sortableTableNew table.display tr.even.gradeX {
+	background-color: #ffeeee;
+}
+
+.sortableTableNew table.display tr.odd.gradeU {
+	background-color: #ddd;
+}
+
+.sortableTableNew table.display tr.even.gradeU {
+	background-color: #eee;
+}
+
+.sortableTableNew tr.odd {
+	background-color: #f8f8f8;
+}
+
+.sortableTableNew tr.even {
+	background-color: #ffffff;
+}
+
+.sortableTableNew tr:hover {
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.sortableTableNew .top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #bababa;
+}
+
+.sortableTableNew .top .dataTables_info {
+	float: none;
+}
+
+.sortableTableNew .clear {
+	clear: both;
+}
+
+.sortableTableNew .dataTables_empty {
+	text-align: center;
+}
+
+.sortableTableNew tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+.sortableTableNew tfoot input.search_init {
+	color: #999;
+}
+
+.sortableTableNew td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+.sortableTableNew td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+
+.sortableTableNew .example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.sortableTableNew .paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.sortableTableNew .paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.sortableTableNew .paging_full_numbers span.paginate_button {
+	color: #9fa1a4;
+}
+
+.sortableTableNew .paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.sortableTableNew .paging_full_numbers span.paginate_active {
+	background-color: #FFFFFF;
+	color: #50555a;
+}
+
+.sortableTableNew table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+.sortableTableNew table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+.sortableTableNew tr.odd td.sorting_1 {
+	background-color: #dce6ee;
+}
+
+.sortableTableNew tr.odd td.sorting_2 {
+	background-color: #ffffff;
+}
+
+.sortableTableNew tr.odd td.sorting_3 {
+	background-color: #ffffff;
+}
+
+.sortableTableNew tr.even td.sorting_1 {
+	background-color: #f8f8f8;
+}
+
+.sortableTableNew tr.even td.sorting_2 {
+	background-color: #f8f8f8;
+}
+
+.sortableTableNew tr.even td.sorting_3 {
+	background-color: #f8f8f8;
+}
+
+.sortableTableNew tr:hover {
+	background-color: #a8c3d5;
+}
+
+.sortableTableNew tr:hover td.sorting_1, .sortableTableNew tr:hover td.sorting_2, .sortableTableNew tr:hover td.sorting_3 {
+	background-color: #a8c3d5;
+}
+
+.sortableTableNew tr.odd:hover a, .sortableTableNew tr.even:hover a {
+	color: #6b6b6b;
+}
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+.sortableTableNew tr.odd.gradeA td.sorting_1 {
+	background-color: #c4ffc4;
+}
+
+.sortableTableNew tr.odd.gradeA td.sorting_2 {
+	background-color: #d1ffd1;
+}
+
+.sortableTableNew tr.odd.gradeA td.sorting_3 {
+	background-color: #d1ffd1;
+}
+
+.sortableTableNew tr.even.gradeA td.sorting_1 {
+	background-color: #d5ffd5;
+}
+
+.sortableTableNew tr.even.gradeA td.sorting_2 {
+	background-color: #e2ffe2;
+}
+
+.sortableTableNew tr.even.gradeA td.sorting_3 {
+	background-color: #e2ffe2;
+}
+
+.sortableTableNew tr.odd.gradeC td.sorting_1 {
+	background-color: #c4c4ff;
+}
+
+.sortableTableNew tr.odd.gradeC td.sorting_2 {
+	background-color: #d1d1ff;
+}
+
+.sortableTableNew tr.odd.gradeC td.sorting_3 {
+	background-color: #d1d1ff;
+}
+
+.sortableTableNew tr.even.gradeC td.sorting_1 {
+	background-color: #d5d5ff;
+}
+
+.sortableTableNew tr.even.gradeC td.sorting_2 {
+	background-color: #e2e2ff;
+}
+
+.sortableTableNew tr.even.gradeC td.sorting_3 {
+	background-color: #e2e2ff;
+}
+
+.sortableTableNew tr.odd.gradeX td.sorting_1 {
+	background-color: #ffc4c4;
+}
+
+.sortableTableNew tr.odd.gradeX td.sorting_2 {
+	background-color: #ffd1d1;
+}
+
+.sortableTableNew tr.odd.gradeX td.sorting_3 {
+	background-color: #ffd1d1;
+}
+
+.sortableTableNew tr.even.gradeX td.sorting_1 {
+	background-color: #ffd5d5;
+}
+
+.sortableTableNew tr.even.gradeX td.sorting_2 {
+	background-color: #ffe2e2;
+}
+
+.sortableTableNew tr.even.gradeX td.sorting_3 {
+	background-color: #ffe2e2;
+}
+
+.sortableTableNew .sortableTableNew tr.odd.gradeU td.sorting_1 {
+	background-color: #c4c4c4;
+}
+
+.sortableTableNew tr.odd.gradeU td.sorting_2 {
+	background-color: #d1d1d1;
+}
+
+.sortableTableNew tr.odd.gradeU td.sorting_3 {
+	background-color: #d1d1d1;
+}
+
+.sortableTableNew tr.even.gradeU td.sorting_1 {
+	background-color: #d5d5d5;
+}
+
+.sortableTableNew tr.even.gradeU td.sorting_2 {
+	background-color: #e2e2e2;
+}
+
+.sortableTableNew tr.even.gradeU td.sorting_3 {
+	background-color: #e2e2e2;
+}
+
+/*
+ * Row highlighting example
+ */
+.sortableTableNew .ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+	background-color: #ECFFB3;
+}
+
+.sortableTableNew .ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+	background-color: #E6FF99;
+}
+
+.dtCenter {
+	text-align: center;
+}
+
+/* End: DataTable */
+
+/* Comparison Table */
+
+.comparison {
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.comparison tr th {
+	background-color: #bababa;
+	background-repeat: repeat-x;
+	height: 39px;
+	padding: none;
+	color: #ffffff;
+	font-weight: bold;
+	border-left: 1px solid #999b9d;
+	border-right: 1px solid #999b9d;
+	border-bottom: 1px solid #999b9d;
+	overflow: hidden;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.comparison tr th.active {
+}
+
+.comparison tr th b {
+	position: relative;
+	top: 0px;
+	font-size: 11px;
+}
+
+.comparison tr th .up, .comparison tr th .down {
+	display: none;
+}
+
+.comparison tr th {
+}
+
+.comparison tr th img {
+	position: absolute;
+	left: 0px;
+}
+
+.comparison .asc .up {
+	display: block;
+}
+
+.comparison .desc .down {
+	display: block;
+}
+
+.comparison tr .icon {
+	width: 16px;
+}
+
+.comparison tr td {
+	border: 1px solid #c4d6e2;
+	color: #6b6b6b;
+	padding: 5px 9px 5px 9px;
+	border-collapse: collapse;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+.comparison tr td.evenselected {
+	background: #f8f8f8;
+}
+
+.comparison tr td.oddselected {
+	background: #dce6ee;
+}
+
+.comparison .oddrow {
+	background-color: #eff6ff;
+}
+
+.comparison td.evenselected {
+}
+
+.comparison td.oddselected {
+}
+
+.comparison tr .tick {
+	text-align: center;
+}
+
+.comparison tr:hover, .comparison tr:hover span {
+	color: #ffffff;
+}
+
+.comparison tr:hover td {
+	color: #ffffff;
+}
+
+.comparison .pointer {
+	cursor: pointer;
+}
+
+/* End: Comparison Table */
